@@ -12,7 +12,7 @@ public class HomePage {
 	{
 		this.driver=driver;
 	}
-	public static final By LINK_SIGNIN = By.cssSelector("//a[title='Log in to your customer account']");
+	public static final By LINK_SIGNIN = By.xpath("//a[@title='Log in to your customer account']");
 	
 	
 	public void clickSignIn()

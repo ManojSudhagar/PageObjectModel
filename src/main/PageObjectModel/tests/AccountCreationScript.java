@@ -18,9 +18,9 @@ public class AccountCreationScript
 		//call the method.
 	WebDriver driver = new ChromeDriver();
 	driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
-	driver.get("http://automationpractice.com/index.php?controller=authentication&back=my-account");
-	//HomePage home = new HomePage(driver);
-	//home.clickSignIn();
+	driver.get("http://automationpractice.com/index.php");
+	HomePage home = new HomePage(driver);
+	home.clickSignIn();
 	MyAccount account = new MyAccount(driver);
 	account.newAccountCreation();
 	AccountCreation ac = new AccountCreation(driver);
